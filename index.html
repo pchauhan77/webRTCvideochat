@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+  <h1>Realtime communication with WebRTC</h1>
+
+  <div id="videos">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+  </div>
+
+  <script src="socket.io/socket.io.js"></script>
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html> -->
+<html>
+    <head>
+            <script src="socket.io/socket.io.js"></script>
+        <script src="./webrtc.js"></script>
+        
+    </head>
+
+    <body>
+        <video id="localVideo" autoplay muted style="width:40%;"></video>
+        <video id="remoteVideo" autoplay style="width:40%;"></video>
+
+        <br />
+
+        <input type="button" id="start" onclick="start(true)" value="Start Video"></input>
+
+        <script type="text/javascript">
+            pageReady();
+        </script>
+    </body>
+</html>
